@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+    <!-- Background circle -->
+    <circle cx="25" cy="25" r="20" fill="#3498db" opacity="0.1"/>
+    
+    <!-- Code brackets -->
+    <path d="M15 25L20 20M15 25L20 30M35 25L30 20M35 25L30 30" 
+          stroke="#3498db" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Center dot (represents completion/progress) -->
+    <circle cx="25" cy="25" r="4" fill="#2c3e50"/>
+</svg>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 Course Home Page">
+    <meta name="author" content="Emmanuel Uko">
+    <title>WDD 231 - Course Home</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-title">
+                <img src="images/logo.svg" alt="Course Logo" width="40" height="40">
+                <span class="student-name">Emmanuel Uko</span>
+            </div>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+        </div>
+    </header>
+    
+    <nav>
+        <ul id="primaryNav" class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="final/index.html">Final</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h1>Home</h1>
+        
+        <section class="hero">
+            <!-- Hero banner image/background would go here -->
+        </section>
+        
+        <section class="about-section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>My name is Emmanuel Uko, and I am a student graphic designer with a growing interest in web design and visual communication. I enjoy creating clear, functional, and visually appealing designs that effectively communicate ideas. <br><br>
+                    I am currently developing my skills in typography, layout, and digital design, with a focus on applying design principles to real-world projects. Through my coursework and personal projects, I have gained experience working with design tools and building simple, user-friendly web layouts. <br><br>
+                    This website was created as part of a design assignment to demonstrate my understanding of structure, visual hierarchy, and basic web design concepts. I am continually learning and refining my skills as I work toward becoming a well-rounded designer.</p>
+                    <div class="divider"></div>
+                </div>
+                <div class="student-photo">
+                    <img src="images/student.webp" alt="Student Photo" width="300" height="400">
+                </div>
+            </div>
+        </section>
+        
+        <section class="courses-section">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="CSE">CSE</button>
+                <button class="filter-btn" data-filter="WDD">WDD</button>
+            </div>
+            <div class="courses-container" id="coursesContainer">
+                <!-- Course cards will be dynamically inserted here -->
+            </div>
+            <div class="credits-total">
+                <p>The total credits for courses listed above is <span id="totalCredits">0</span></p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                <img src="images/github.svg" alt="GitHub" width="24" height="24">
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="24" height="24">
+            </a>
+            <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter">
+                <img src="images/twitter.svg" alt="Twitter" width="24" height="24">
+            </a>
+            <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+                <img src="images/instagram.svg" alt="Instagram" width="24" height="24">
+            </a>
+        </div>
+
+        <div class="footer-content">
+            <p>&copy; <span id="currentYear"></span> • <span class="*">Emmanuel Uko</span> • Calabar, Nigeria</p>
+            <p class="last-modified">Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
