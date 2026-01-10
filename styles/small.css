@@ -108,7 +108,7 @@ main {
     padding: 1.5rem;
 }
 
-h2.span {
+h1 {
     font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 1.5rem;
