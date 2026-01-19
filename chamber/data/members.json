@@ -4,7 +4,7 @@
         "address": "15 Rue du Marché, Calabar",
         "phone": "(223) 555-0101",
         "website": "https://sahara-textiles.ml",
-        "image": "textiles.jpg",
+        "image": "https://plus.unsplash.com/premium_photo-1674718917019-2336218ed00f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHRleHRpbGUlMjBzdG9yZXxlbnwwfHwwfHx8MA%3D%3D",
         "membership": 3,
         "category": "Retail",
         "description": "Traditional Malian fabrics and clothing"
@@ -13,8 +13,8 @@
         "name": "Calabar Tours",
         "address": "5 Avenue de l'Indépendance, Calabar",
         "phone": "(223) 555-0202",
-        "website": "https://timbuktutours.ml",
-        "image": "tours.jpg",
+        "website": "https://calabartours.ml",
+        "image": "https://plus.unsplash.com/premium_photo-1755719591642-e1008676ff6f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FsYWJhciUyMG5pZ2VyaWElMjB0b3VyfGVufDB8fDB8fHww",
         "membership": 2,
         "category": "Tourism",
         "description": "Guided tours of historical sites"
@@ -24,7 +24,7 @@
         "address": "Port de Kabara, Calabar",
         "phone": "(223) 555-0303",
         "website": "https://nigerfisheries.ml",
-        "image": "fisheries.jpg",
+        "image": "https://media.istockphoto.com/id/1576239003/photo/vessels-anchorage-and-vessel-sailing.webp?a=1&b=1&s=612x612&w=0&k=20&c=DdOJaR-Dbqd-w8DbAhI1gIhbF1ewXTJBCw7-VlkRlRg=",
         "membership": 3,
         "category": "Food",
         "description": "Fresh fish and seafood distribution"
@@ -34,7 +34,7 @@
         "address": "22 Rue des Entrepreneurs, Calabar",
         "phone": "(223) 555-0404",
         "website": "https://malitech.ml",
-        "image": "tech.jpg",
+        "image": "https://media.istockphoto.com/id/1366824814/photo/daughter-watches-unrecognizable-dad-receive-mail-from-unrecognizable-delivery-person.webp?a=1&b=1&s=612x612&w=0&k=20&c=8WpviiexzB1u8gzEWxaKV2xRuSgr-dDYhmPPDV2Sdac=",
         "membership": 2,
         "category": "Technology",
         "description": "IT services and digital solutions"
@@ -44,7 +44,7 @@
         "address": "8 Place Sankoré, Calabar",
         "phone": "(223) 555-0505",
         "website": "https://sankorebooks.ml",
-        "image": "bookstore.jpg",
+        "image": "https://media.istockphoto.com/id/1389125849/photo/bookstore-full-of-books-makes-for-better-everyday-life.webp?a=1&b=1&s=612x612&w=0&k=20&c=iQkvzxLL3zb8hctmm3bA1BKEetkOerqNRXTJcIGcWmY=",
         "membership": 1,
         "category": "Education",
         "description": "Books and educational materials"
@@ -54,17 +54,17 @@
         "address": "12 Boulevard du Sahara, Calabar",
         "phone": "(223) 555-0606",
         "website": "https://desertoasishotel.ml",
-        "image": "hotel.jpg",
+        "image": "https://images.unsplash.com/photo-1685766154442-9a7747271ab3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGVzZXJ0JTIwb2FzaXMlMjBob3RlbCUyMHJlbGF0ZWQlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D",
         "membership": 3,
         "category": "Hospitality",
         "description": "Luxury accommodation with pool"
     },
     {
-        "name": "Timbuktu Artisans Cooperative",
+        "name": "Calabar Artisans Cooperative",
         "address": "3 Rue des Artisans, Calabar",
         "phone": "(223) 555-0707",
         "website": "https://timbuktuartisans.ml",
-        "image": "artisans.jpg",
+        "image": "https://media.istockphoto.com/id/1074850196/photo/cropped-closeup-photo-of-small-tiny-little-heart-shaped-wooden-d.webp?a=1&b=1&s=612x612&w=0&k=20&c=H2WwnvxxSekpERFMsJdMt809T70CYFqeveI3DfXqh9M=",
         "membership": 1,
         "category": "Arts",
         "description": "Handcrafted goods from local artisans"
@@ -74,7 +74,7 @@
         "address": "18 Route de Gao, Calabar",
         "phone": "(223) 555-0808",
         "website": "https://sahelconstruction.ml",
-        "image": "construction.jpg",
+        "image": "https://media.istockphoto.com/id/1376721574/photo/tools-at-a-construction-site.webp?a=1&b=1&s=612x612&w=0&k=20&c=eOjeUp0YfY8CJ235ddFsy66qob__tL2XCVhbnhxI9hY=",
         "membership": 2,
         "category": "Construction",
         "description": "Building and infrastructure projects"
@@ -84,7 +84,7 @@
         "address": "7 Place du Marché, Calabar",
         "phone": "(223) 555-0909",
         "website": "https://nomadcafe.ml",
-        "image": "cafe.jpg",
+        "image": "https://media.istockphoto.com/id/2163050896/photo/red-cup-with-cappuccino-in-sidewalk-cafe.webp?a=1&b=1&s=612x612&w=0&k=20&c=wulb5X9gURoDwoUyQ_46CdsRU3YH9AXqP2B4n-vpJUI=",
         "membership": 1,
         "category": "Food",
         "description": "Coffee, tea, and light meals"

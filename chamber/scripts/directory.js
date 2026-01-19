@@ -36,23 +36,26 @@ function createMemberCard(member) {
     switch(member.membership) {
         case 3: membershipText = 'Gold'; membershipClass = 'membership-3'; break;
         case 2: membershipText = 'Silver'; membershipClass = 'membership-2'; break;
-        case 1: membershipText = 'Member'; membershipClass = 'membership-1'; break;
+        case 1: membershipText = 'Bronze'; membershipClass = 'membership-1'; break;
     }
     
     return `
         <article class="member-card">
             <div class="member-image">
-                <img src="images/members/${member.image}" alt="${member.name}" loading="lazy">
+                <img src="${member.image}" 
+                     alt="${member.name}" 
+                     loading="lazy"
+                     onload="this.classList.add('loaded')">
             </div>
             <div class="member-info">
-                <span class="membership-badge ${membershipClass}">${membershipText}</span>
+                <span class="membership-badge ${membershipClass}">${membershipText} Member</span>
                 <h3>${member.name}</h3>
                 <p class="member-category">${member.category}</p>
                 <p class="member-description">${member.description}</p>
                 <div class="member-contact">
                     <p><strong>📍</strong> ${member.address}</p>
                     <p><strong>📞</strong> ${member.phone}</p>
-                    <p><strong>🌐</strong> <a href="${member.website}" target="_blank">${member.website.replace('https://', '')}</a></p>
+                    <p><strong>🌐</strong> <a href="${member.website}" target="_blank" rel="noopener">${member.website.replace('https://', '')}</a></p>
                 </div>
             </div>
         </article>
