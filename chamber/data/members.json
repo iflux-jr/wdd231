@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Sahara Textiles",
+        "address": "15 Rue du Marché, Calabar",
+        "phone": "(223) 555-0101",
+        "website": "https://sahara-textiles.ml",
+        "image": "textiles.jpg",
+        "membership": 3,
+        "category": "Retail",
+        "description": "Traditional Malian fabrics and clothing"
+    },
+    {
+        "name": "Calabar Tours",
+        "address": "5 Avenue de l'Indépendance, Calabar",
+        "phone": "(223) 555-0202",
+        "website": "https://timbuktutours.ml",
+        "image": "tours.jpg",
+        "membership": 2,
+        "category": "Tourism",
+        "description": "Guided tours of historical sites"
+    },
+    {
+        "name": "Niger River Fisheries",
+        "address": "Port de Kabara, Calabar",
+        "phone": "(223) 555-0303",
+        "website": "https://nigerfisheries.ml",
+        "image": "fisheries.jpg",
+        "membership": 3,
+        "category": "Food",
+        "description": "Fresh fish and seafood distribution"
+    },
+    {
+        "name": "MaliTech Solutions",
+        "address": "22 Rue des Entrepreneurs, Calabar",
+        "phone": "(223) 555-0404",
+        "website": "https://malitech.ml",
+        "image": "tech.jpg",
+        "membership": 2,
+        "category": "Technology",
+        "description": "IT services and digital solutions"
+    },
+    {
+        "name": "Sankore Bookstore",
+        "address": "8 Place Sankoré, Calabar",
+        "phone": "(223) 555-0505",
+        "website": "https://sankorebooks.ml",
+        "image": "bookstore.jpg",
+        "membership": 1,
+        "category": "Education",
+        "description": "Books and educational materials"
+    },
+    {
+        "name": "Desert Oasis Hotel",
+        "address": "12 Boulevard du Sahara, Calabar",
+        "phone": "(223) 555-0606",
+        "website": "https://desertoasishotel.ml",
+        "image": "hotel.jpg",
+        "membership": 3,
+        "category": "Hospitality",
+        "description": "Luxury accommodation with pool"
+    },
+    {
+        "name": "Timbuktu Artisans Cooperative",
+        "address": "3 Rue des Artisans, Calabar",
+        "phone": "(223) 555-0707",
+        "website": "https://timbuktuartisans.ml",
+        "image": "artisans.jpg",
+        "membership": 1,
+        "category": "Arts",
+        "description": "Handcrafted goods from local artisans"
+    },
+    {
+        "name": "Sahel Construction",
+        "address": "18 Route de Gao, Calabar",
+        "phone": "(223) 555-0808",
+        "website": "https://sahelconstruction.ml",
+        "image": "construction.jpg",
+        "membership": 2,
+        "category": "Construction",
+        "description": "Building and infrastructure projects"
+    },
+    {
+        "name": "Nomad Café",
+        "address": "7 Place du Marché, Calabar",
+        "phone": "(223) 555-0909",
+        "website": "https://nomadcafe.ml",
+        "image": "cafe.jpg",
+        "membership": 1,
+        "category": "Food",
+        "description": "Coffee, tea, and light meals"
+    }
+]

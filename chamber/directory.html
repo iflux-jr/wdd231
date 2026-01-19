@@ -3,37 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD231 | Chamber of Commerce Business Directory - Connect with local businesses and members in Calabar, Nigria">
     <meta name="author" content="Emmanuel Uko">
-    <meta name="desctiption" content="Directory of members of the Calabar Chamber of Commerce, showcasing businesses and services in Calabar.">
-    <title>Directory | Calabar Chamber of Commerce</title>
-
-    <!-- Open Graph Meta Tags for Facebook -->
-    <meta property="og:title" content="Chamber of Commerce | Emmanuel Uko">
-    <meta property="og:description" content="Explore my web development journey through WDD 231. View course projects, learn about web technologies, and see my progress in frontend development at BYU-Idaho.">
-    <meta property="og:image" content="images/favicon.ico">
-    <meta property="og:url" content="https://iflux-jr.github.io/wdd231/">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Chamber of Commerce | Emmanuel Uko">
-    <meta name="twitter:description" content="Student portfolio showcasing web development projects from WDD 231 course at BYU-Idaho.">
-    <meta name="twitter:image" content="https://iflux-jr.github.io/wdd231/images/social-preview.jpg">
+    <title>Business Directory | Calabar Chamber of Commerce</title>
     
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico">
-
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Timbuktu Chamber of Commerce Business Directory">
+    <meta property="og:description" content="Find and connect with local businesses in Timbuktu, Mali">
+    <meta property="og:image" content="https://yourgithubusername.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url" content="https://yourgithubusername.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/main.js" defer></script>
     <script src="scripts/directory.js" defer></script>
-    <scripts src="scripts/main.js" defer></scripts>
+    <script src="scripts/dates.js" defer></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header>
-        <a href="index.html"><img src="images/favicon.ico"></a>
-
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/favicon.ico" alt="Timbuktu Chamber of Commerce Logo" width="60" height="60">
+                    <div class="logo-text">
+                        <h1>Calabar Chamber of Commerce</h1>
+                    </div>
+                </a>
+            </div>
+            <button id="menu-toggle" class="hamburger" aria-label="Menu">☰</button>
+        </div>
+        
+        <nav>
+            <ul id="primary-nav" class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
     </header>
     
+    <main class="directory-main">
+        <h2>Business Directory</h2>
+        
+        <div class="view-controls">
+            <button id="grid-view" class="view-btn active" title="Grid View">
+                <span>☷</span> Grid
+            </button>
+            <button id="list-view" class="view-btn" title="List View">
+                <span>☰</span> List
+            </button>
+        </div>
+        
+        <div id="member-container" class="grid-view">
+            <!-- Member cards will be dynamically inserted here -->
+            <div class="loading">Loading businesses...</div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Calabar Chamber of Commerce</h3>
+                <p>Technical Layout</p>
+                <p>Calabar, Nigria</p>
+                <p>info@calabarcc.org</p>
+                <p>(+234) 123-456-7890</p>
+            </div>
+            
+            <div class="social-media">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <span>📷</span>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                        <span>💬</span>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                        <span>🎥</span>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <span>💼</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Calabar Chamber of Commerce</p>
+            <p>Emmanuel Uko | WDD231 Class Project</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
 </body>
 </html>

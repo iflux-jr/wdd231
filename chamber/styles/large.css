@@ -1,0 +1,67 @@
+@media (min-width: 768px) {
+    /* Navigation */
+    .hamburger {
+        display: none;
+    }
+    
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .navigation li {
+        border-bottom: none;
+        border-right: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .navigation li:last-child {
+        border-right: none;
+    }
+    
+    .navigation a {
+        padding: 1rem 1.5rem;
+    }
+    
+    /* Logo */
+    .logo-text h1 {
+        font-size: 1.5rem;
+    }
+    
+    /* Footer Layout */
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .contact-info,
+    .social-media {
+        flex: 1;
+    }
+    
+    /* Grid View */
+    .grid-view {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    
+    /* View Controls */
+    .view-controls {
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    main {
+        padding: 2rem;
+    }
+    
+    footer {
+        padding: 3rem 2rem;
+    }
+}
