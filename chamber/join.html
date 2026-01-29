@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Calabar Chamber of Commerce - Membership Application Form">
+    <meta name="author" content="Marie Martínez">
+    <title>Join Chamber | Calabar Chamber of Commerce</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Join Calabar Chamber of Commerce">
+    <meta property="og:description" content="Apply for membership and grow your business with us">
+    <meta property="og:image" content="https://iflux-jr.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url" content="https://iflux-jr.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/favicon.ico" alt="Calabar Chamber of Commerce Logo" width="60" height="60">
+                    <div class="logo-text">
+                        <h1>Calabar Chamber of Commerce</h1>
+                    </div>
+                </a>
+            </div>
+            <button id="menu-toggle" class="hamburger" aria-label="Menu">☰</button>
+        </div>
+        
+        <nav>
+            <ul id="primary-nav" class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="join-main">
+        <h2>Join the Chamber</h2>
+        <p class="subtitle">Become a member and grow your business with us</p>
+        
+        <div class="join-container">
+            <!-- Form Section -->
+            <section class="form-section">
+                <h3>Membership Application</h3>
+                <form id="membershipForm" method="get" action="thankyou.html">
+                    <!-- Personal Information -->
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        
+                        <label for="firstName">
+                            First Name *
+                            <input type="text" id="firstName" name="firstName" 
+                                   title="Enter your first name"
+                                   autocomplete="given-name"
+                                   required>
+                        </label>
+                        
+                        <label for="lastName">
+                            Last Name *
+                            <input type="text" id="lastName" name="lastName" 
+                                   title="Enter your last name"
+                                   autocomplete="family-name"
+                                   required>
+                        </label>
+                        
+                        <label for="title">
+                            Job Title
+                            <input type="text" id="title" name="title" 
+                                   title="Enter your job title"
+                                   autocomplete="organization-title"
+                                   pattern="[A-Za-z\s\-]{7,}"
+                                   placeholder="e.g., Marketing Director">
+                            <span class="hint">Minimum 7 characters, letters, spaces, and hyphens only</span>
+                        </label>
+                    </fieldset>
+                    
+                    <!-- Contact Information -->
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        
+                        <label for="email">
+                            Email *
+                            <input type="email" id="email" name="email" 
+                                   title="Enter your email address"
+                                   autocomplete="email"
+                                   placeholder="yourname@example.com"
+                                   required>
+                        </label>
+                        
+                        <label for="phone">
+                            Mobile Phone *
+                            <input type="tel" id="phone" name="phone" 
+                                   title="Enter your mobile phone number"
+                                   autocomplete="tel"
+                                   required>
+                        </label>
+                    </fieldset>
+                    
+                    <!-- Business Information -->
+                    <fieldset>
+                        <legend>Business Information</legend>
+                        
+                        <label for="businessName">
+                            Business/Organization Name *
+                            <input type="text" id="businessName" name="businessName" 
+                                   title="Enter your business or organization name"
+                                   autocomplete="organization"
+                                   required>
+                        </label>
+                        
+                        <label for="membershipLevel">
+                            Membership Level *
+                            <select id="membershipLevel" name="membershipLevel" title="Select membership level" required>
+                                <option value="" disabled selected>Select a level</option>
+                                <option value="np">NP Membership (Non-Profit) - Free</option>
+                                <option value="bronze">Bronze Membership - $100/year</option>
+                                <option value="silver">Silver Membership - $250/year</option>
+                                <option value="gold">Gold Membership - $500/year</option>
+                            </select>
+                        </label>
+                        
+                        <label for="description">
+                            Business Description
+                            <textarea id="description" name="description" 
+                                      title="Describe your business or organization"
+                                      rows="4"></textarea>
+                        </label>
+                    </fieldset>
+                    
+                    <!-- Hidden timestamp field -->
+                    <input type="hidden" id="timestamp" name="timestamp">
+                    
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </form>
+            </section>
+            
+            <!-- Membership Cards -->
+            <section class="cards-section">
+                <h3>Membership Levels</h3>
+                <div class="membership-cards">
+                    <!-- NP Card -->
+                    <div class="membership-card np-card">
+                        <h4>NP Membership</h4>
+                        <p class="price">Free</p>
+                        <ul class="benefits">
+                            <li>Directory listing</li>
+                            <li>Monthly newsletter</li>
+                            <li>Basic event access</li>
+                        </ul>
+                        <button class="info-btn" data-level="np">Learn More</button>
+                    </div>
+                    
+                    <!-- Bronze Card -->
+                    <div class="membership-card bronze-card">
+                        <h4>Bronze</h4>
+                        <p class="price">$100/year</p>
+                        <ul class="benefits">
+                            <li>All NP benefits</li>
+                            <li>Event discounts</li>
+                            <li>Training workshops</li>
+                        </ul>
+                        <button class="info-btn" data-level="bronze">Learn More</button>
+                    </div>
+                    
+                    <!-- Silver Card -->
+                    <div class="membership-card silver-card">
+                        <h4>Silver</h4>
+                        <p class="price">$250/year</p>
+                        <ul class="benefits">
+                            <li>All Bronze benefits</li>
+                            <li>Advertising credits</li>
+                            <li>Priority support</li>
+                            <li>Networking events</li>
+                        </ul>
+                        <button class="info-btn" data-level="silver">Learn More</button>
+                    </div>
+                    
+                    <!-- Gold Card -->
+                    <div class="membership-card gold-card">
+                        <h4>Gold</h4>
+                        <p class="price">$500/year</p>
+                        <ul class="benefits">
+                            <li>All Silver benefits</li>
+                            <li>Homepage spotlight</li>
+                            <li>Executive networking</li>
+                            <li>Premium training</li>
+                            <li>Sponsorship opportunities</li>
+                        </ul>
+                        <button class="info-btn" data-level="gold">Learn More</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Membership Level Modals -->
+    <div id="modalOverlay" class="modal-overlay"></div>
+    
+    <!-- NP Modal -->
+    <div id="npModal" class="modal" role="dialog" aria-labelledby="npModalTitle">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h3 id="npModalTitle">NP Membership Details</h3>
+        <div class="modal-content">
+            <p><strong>Free for Non-Profit Organizations</strong></p>
+            <p>Perfect for non-profit organizations looking to connect with the community.</p>
+            <ul>
+                <li>Free membership for qualified non-profits</li>
+                <li>Basic business directory listing</li>
+                <li>Monthly Chamber newsletter</li>
+                <li>Access to public Chamber events</li>
+                <li>Community networking opportunities</li>
+                <li>Non-profit resource library access</li>
+                <li>Volunteer matching services</li>
+            </ul>
+            <p><em>Note: Must provide proof of 501(c)(3) status</em></p>
+        </div>
+    </div>
+    
+    <!-- Bronze Modal -->
+    <div id="bronzeModal" class="modal" role="dialog" aria-labelledby="bronzeModalTitle">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h3 id="bronzeModalTitle">Bronze Membership Details</h3>
+        <div class="modal-content">
+            <p><strong>$100 per year</strong></p>
+            <p>Ideal for small businesses and startups.</p>
+            <ul>
+                <li>All NP Membership benefits</li>
+                <li>Enhanced directory listing with logo</li>
+                <li>10% discount on Chamber events</li>
+                <li>Access to business training workshops</li>
+                <li>Monthly business development webinars</li>
+                <li>Social media shoutouts</li>
+                <li>Referral network access</li>
+                <li>Business mentoring program</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Silver Modal -->
+    <div id="silverModal" class="modal" role="dialog" aria-labelledby="silverModalTitle">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h3 id="silverModalTitle">Silver Membership Details</h3>
+        <div class="modal-content">
+            <p><strong>$250 per year</strong></p>
+            <p>Great for growing businesses seeking more visibility.</p>
+            <ul>
+                <li>All Bronze Membership benefits</li>
+                <li>$100 advertising credits for Chamber publications</li>
+                <li>Priority customer support</li>
+                <li>Exclusive networking events</li>
+                <li>20% discount on Chamber events</li>
+                <li>Featured in monthly member spotlight email</li>
+                <li>Access to premium market research</li>
+                <li>Business consultation sessions (2 per year)</li>
+                <li>Leadership development opportunities</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Gold Modal -->
+    <div id="goldModal" class="modal" role="dialog" aria-labelledby="goldModalTitle">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h3 id="goldModalTitle">Gold Membership Details</h3>
+        <div class="modal-content">
+            <p><strong>$500 per year</strong></p>
+            <p>Premium level for established businesses seeking maximum exposure.</p>
+            <ul>
+                <li>All Silver Membership benefits</li>
+                <li>Homepage spotlight advertisement (rotating)</li>
+                <li>Executive networking roundtables</li>
+                <li>Premium business training sessions</li>
+                <li>Sponsorship opportunities at major events</li>
+                <li>50% discount on Chamber events</li>
+                <li>Featured in Chamber podcast interviews</li>
+                <li>VIP access to annual Business Expo</li>
+                <li>Dedicated account manager</li>
+                <li>Business consultation sessions (6 per year)</li>
+                <li>Media exposure through Chamber press releases</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Calabar Chamber of Commerce</h3>
+                <p>Technical Layout</p>
+                <p>Calabar, Nigeria</p>
+                <p>info@calabarcc.org</p>
+                <p>(+234) 123-456-7890</p>
+            </div>
+            
+            <div class="social-media">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <span>📷</span>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                        <span>💬</span>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                        <span>🎥</span>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <span>💼</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Calabar Chamber of Commerce</p>
+            <p>Emmanuel Uko | WDD231 Class Project</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

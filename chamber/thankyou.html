@@ -3,19 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD231 | Chamber of Commerce Business Directory - Connect with local businesses and members in Calabar, Nigria">
-    <meta name="author" content="Emmanuel Uko">
-    <title>Directory | Calabar Chamber of Commerce</title>
+    <meta name="description" content="Thank you for joining Timbuktu Chamber of Commerce">
+    <meta name="author" content="Marie Martínez">
+    <title>Thank You | Calabar Chamber of Commerce</title>
     
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    
-    <!-- Facebook Open Graph Meta Tags -->
-    <meta property="og:title" content="Calabar Chamber of Commerce Business Directory">
-    <meta property="og:description" content="Find and connect with local businesses in Calabar, Nigeria">
-    <meta property="og:image" content="https://iflux-jr.github.io/wdd231/chamber/images/favicon.ico">
-    <meta property="og:url" content="https://iflux-jr.github.io/wdd231/chamber/directory.html">
-    <meta property="og:type" content="website">
     
     <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -24,8 +17,8 @@
     
     <!-- JavaScript -->
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,7 +30,7 @@
         <div class="header-container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/favicon.ico" alt="Calabar Chamber of Commerce Logo" width="60" height="60">
+                    <img src="images/favicon.ico" alt="Timbuktu Chamber of Commerce Logo" width="60" height="60">
                     <div class="logo-text">
                         <h1>Calabar Chamber of Commerce</h1>
                     </div>
@@ -50,7 +43,7 @@
             <ul id="primary-nav" class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="podcast.html">Podcast</a></li>
@@ -59,21 +52,42 @@
         </nav>
     </header>
     
-    <main class="directory-main">
-        <h2>Business Directory</h2>
-        
-        <div class="view-controls">
-            <button id="grid-view" class="view-btn active" title="Grid View">
-                <span>☷</span> Grid
-            </button>
-            <button id="list-view" class="view-btn" title="List View">
-                <span>☰</span> List
-            </button>
-        </div>
-        
-        <div id="member-container" class="grid-view">
-            <!-- Member cards will be dynamically inserted here -->
-            <div class="loading">Loading businesses...</div>
+    <main class="thankyou-main">
+        <div class="thankyou-container">
+            <div class="thankyou-card">
+                <h2>Thank You for Your Application!</h2>
+                <div class="confirmation-icon">✓</div>
+                <p class="confirmation-message">
+                    Your membership application has been received successfully. 
+                    A Chamber representative will contact you within 2 business days 
+                    to complete your membership process.
+                </p>
+                
+                <div class="application-summary">
+                    <h3>Application Summary</h3>
+                    <div id="applicationData">
+                        <!-- Application data will be displayed here -->
+                        <p>Loading your application details...</p>
+                    </div>
+                </div>
+                
+                <div class="next-steps">
+                    <h4>Next Steps</h4>
+                    <ol>
+                        <li>Check your email for confirmation</li>
+                        <li>Our team will review your application</li>
+                        <li>We'll contact you to discuss membership benefits</li>
+                        <li>Complete payment (if applicable)</li>
+                        <li>Welcome to the Chamber!</li>
+                    </ol>
+                </div>
+                
+                <div class="action-buttons">
+                    <a href="index.html" class="btn btn-primary">Return to Home</a>
+                    <a href="directory.html" class="btn btn-secondary">Browse Members</a>
+                    <a href="events.html" class="btn btn-secondary">View Events</a>
+                </div>
+            </div>
         </div>
     </main>
     

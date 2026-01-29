@@ -140,3 +140,61 @@
 }
 
 /* End of Home Page Styles */
+
+@media (min-width: 768px) {
+    /* Join Page Layout */
+    .join-container {
+        flex-direction: row;
+        gap: 3rem;
+    }
+    
+    .form-section {
+        flex: 2;
+    }
+    
+    .cards-section {
+        flex: 1;
+        min-width: 300px;
+    }
+    
+    /* Membership Cards */
+    .membership-cards {
+        grid-template-columns: 1fr;
+        position: sticky;
+        top: 2rem;
+    }
+    
+    /* Form Improvements */
+    form {
+        gap: 2rem;
+    }
+    
+    fieldset {
+        padding: 2rem;
+    }
+
+    /* End of Join Page Styles */
+    
+    /* Thank You Page */
+    .action-buttons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .btn {
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .join-main {
+        padding: 2rem;
+    }
+    
+    .thankyou-card {
+        padding: 4rem 3rem;
+    }
+}
+
+/* End of Thank You Page Styles */
