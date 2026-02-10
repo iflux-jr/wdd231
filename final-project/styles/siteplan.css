@@ -492,7 +492,7 @@ section::before {
 }
 
 #special-features li::before {
-    content: '✨';
+    content: '';
     left: var(--space-sm);
     top: var(--space-md);
     font-size: 1.2rem;
