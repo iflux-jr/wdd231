@@ -1035,6 +1035,528 @@ input:valid:not(:placeholder-shown) {
 
 /* End of Thank You Page Styles */
 
+/* Discover Page Styles */
+/* Discover Page Styles */
+.discover-main {
+    padding: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.page-header h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Visitor Message */
+.visitor-message {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    position: relative;
+    box-shadow: var(--shadow);
+}
+
+.close-message {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-message:hover {
+    color: var(--accent-color);
+}
+
+#visitMessage {
+    margin: 0;
+    font-weight: 500;
+    padding-right: 1.5rem;
+}
+
+/* Demographics Section */
+.demographics {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.demo-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--secondary-color);
+}
+
+.demo-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    font-size: 1.3rem;
+}
+
+.demo-card p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.demo-card strong {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+/* Attractions Section */
+.attractions h3 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.attractions-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.attraction-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.attraction-card:hover {
+    transform: translateY(-5px);
+}
+
+.attraction-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.attraction-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.attraction-card:hover .attraction-image img {
+    transform: scale(1.05);
+}
+
+.attraction-content {
+    padding: 1.5rem;
+}
+
+.attraction-content h4 {
+    color: var(--primary-color);
+    margin: 0 0 0.75rem 0;
+    font-size: 1.3rem;
+}
+
+.attraction-category {
+    display: inline-block;
+    background-color: var(--light-bg);
+    color: var(--secondary-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.attraction-address {
+    color: #666;
+    font-style: normal;
+    margin: 0.75rem 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.attraction-description {
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.attraction-details {
+    background-color: var(--light-bg);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.attraction-details p {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.attraction-details strong {
+    min-width: 80px;
+    color: var(--primary-color);
+}
+
+.learn-more-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.learn-more-btn:hover {
+    background-color: var(--primary-color);
+}
+
+/* Gallery Section */
+.gallery {
+    margin-top: 3rem;
+}
+
+.gallery h3 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Visitor Info in Footer */
+.visitor-info {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.visitor-info h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.visitor-info p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Loading State */
+.loading {
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+    font-style: italic;
+    grid-column: 1 / -1;
+}
+
+/* End of Discover Page Styles */
+
+/* Compact Attraction Cards */
+.attraction-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.attraction-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.attraction-header {
+    position: relative;
+    height: 160px;
+    overflow: hidden;
+}
+
+.attraction-image {
+    width: 100%;
+    height: 100%;
+}
+
+.attraction-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.attraction-card:hover .attraction-image img {
+    transform: scale(1.1);
+}
+
+.attraction-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.attraction-content {
+    padding: 1.25rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.attraction-content h4 {
+    color: var(--primary-color);
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+.attraction-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.attraction-meta .location {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.attraction-meta .hours {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.attraction-description {
+    color: var(--text-color);
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+    font-size: 0.95rem;
+    flex-grow: 1;
+}
+
+.attraction-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.price {
+    font-weight: 600;
+    color: var(--accent-color);
+    font-size: 1rem;
+}
+
+.learn-more-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.learn-more-btn:hover {
+    background-color: var(--primary-color);
+}
+
+/* Attraction Modal */
+.attraction-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.attraction-modal .modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.attraction-modal .modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+}
+
+.attraction-modal .modal-close:hover {
+    color: var(--accent-color);
+}
+
+.attraction-modal h3 {
+    color: var(--primary-color);
+    margin: 0 0 1rem 0;
+}
+
+.attraction-modal .modal-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.attraction-modal p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.attraction-modal strong {
+    color: var(--primary-color);
+    min-width: 100px;
+    display: inline-block;
+}
+
+.attraction-modal .close-modal-btn {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+/* End of Compact Attraction Cards */
+
+/* Improve overall spacing */
+.discover-main {
+    padding: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-bottom: 1.5rem;
+}
+
+.attractions {
+    margin: 2rem 0;
+}
+
+.attractions h3 {
+    margin-bottom: 1rem;
+}
+
+.gallery {
+    margin-top: 2rem;
+}
+
+/* Equal height cards */
+.attractions-grid {
+    align-items: stretch;
+}
+
+.attraction-card {
+    height: 100%;
+}
+
 /* Footer */
 footer {
     background-color: var(--primary-color);

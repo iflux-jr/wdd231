@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Timbuktu - Explore historic sites and attractions in Timbuktu, Mali">
+    <meta name="author" content="Marie Martínez">
+    <title>Discover Calabar | Chamber of Commerce</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Discover Timbuktu - Historic City Attractions">
+    <meta property="og:description" content="Explore 8 amazing attractions in historic Calabar, Mali">
+    <meta property="og:image" content="https://yourgithubusername.github.io/wdd231/chamber/images/attractions/sankore-mosque.webp">
+    <meta property="og:url" content="https://yourgithubusername.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+    <script type="module" src="scripts/attractions.js"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/favicon.ico" alt="Calabar Chamber of Commerce Logo" width="60" height="60">
+                    <div class="logo-text">
+                        <h1>Calabar Chamber of Commerce</h1>
+                    </div>
+                </a>
+            </div>
+            <button id="menu-toggle" class="hamburger" aria-label="Menu">☰</button>
+        </div>
+        
+        <nav>
+            <ul id="primary-nav" class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="discover-main">
+        <section class="page-header">
+            <h2>Discover Calabar</h2>
+            <p class="subtitle">Explore the historic city and its amazing attractions</p>
+            
+            <!-- Visitor Message -->
+            <div class="visitor-message" id="visitorMessage">
+                <button class="close-message" aria-label="Close message">&times;</button>
+                <p id="visitMessage">Welcome to Calabar!</p>
+            </div>
+        </section>
+        
+        <!-- Demographic Information -->
+        <section class="demographics">
+            <div class="demo-card">
+                <h3>About Calabar</h3>
+                <p>Calabar is a historic city in southern Nigeria, located in Cross River State near the Calabar River and close to the Atlantic coast. It was an important center of trade and administration during the colonial era and is known for its rich cultural heritage, tourism, and the annual Calabar Carnival.</p>
+            </div>
+            
+            <div class="demo-card">
+                <h3>Population</h3>
+                <p>Approximately<strong> 371,000</strong> residents (2006 national census)</p>
+                <p>Major ethnic groups: Efik (indigenous), Efut, Qua, Ibibio, Annang, and other Nigerian ethnic groups.</p>
+            </div>
+            
+            <div class="demo-card">
+                <h3>Climate</h3>
+                <p><strong>Tropical monsoon climate</strong> (Am)</p>
+                <p>Average temperature: 26–27°C (79–81°F)</p>
+                <p>Annual rainfall: 3,000–3,500 mm (118–138 inches)</p>
+            </div>
+            
+            <div class="demo-card">
+                <h3>Economy</h3>
+                <p>Tourism, trade and commerce, agriculture (oil palm, cocoa, rubber), education, and public administration</p>
+                <p>Home of the <strong>Calabar Carnival</strong>, one of Africa’s largest street festivals, and a major center of Efik culture and heritage</p>
+            </div>
+        </section>
+        
+        <!-- Attractions Grid -->
+        <section class="attractions">
+            <h3>Top Attractions</h3>
+            <div class="attractions-grid" id="attractionsGrid">
+                <!-- Attractions will be dynamically loaded from JSON -->
+                <div class="loading">Loading attractions...</div>
+            </div>
+        </section>
+        
+        <!-- Photo Gallery -->
+        <section class="gallery">
+            <h3>Photo Gallery</h3>
+            <div class="gallery-grid">
+                <figure class="gallery-item">
+                    <img src="images/attractions/calabar-carnival.webp" alt="Calabar Carnival" loading="lazy">
+                    <figcaption>Calabar Carnival</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/attractions/national-museum-calabar.webp" alt="National Museum Calabar" loading="lazy">
+                    <figcaption>National Museum, Calabar</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/attractions/marina-resort.webp" alt="Marina Resort Calabar" loading="lazy">
+                    <figcaption>Marina Resort</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/attractions/kwa-falls.webp" alt="Kwa Falls" loading="lazy">
+                    <figcaption>Kwa Falls</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Calabar Chamber of Commerce</h3>
+                <p>Technical Layout</p>
+                <p>Calabar, Nigeria</p>
+                <p>info@calabarcc.org</p>
+                <p>(+234) 123-456-7890</p>
+            </div>
+            
+            <div class="social-media">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <span>📷</span>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                        <span>💬</span>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                        <span>🎥</span>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <span>💼</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="visitor-info">
+                <h3>Your Visit</h3>
+                <p id="visitCounter">First time visitor</p>
+                <p>Page loaded: <span id="currentDate"></span></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Timbuktu Chamber of Commerce</p>
+            <p>Emmanuel Uko | WDD231 Class Project</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

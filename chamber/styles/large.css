@@ -198,3 +198,47 @@
 }
 
 /* End of Thank You Page Styles */
+
+/* Discover Page Styles */
+/* Large Screens: 1025px and above */
+@media (min-width: 1025px) {
+    /* Attractions Grid - 3 columns */
+    .attractions-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+            "attraction1 attraction2 attraction3"
+            "attraction4 attraction5 attraction6"
+            "attraction7 attraction8 .";
+        gap: 1.5rem;
+    }
+    
+    /* Even more compact for 3 columns */
+    .attraction-card {
+        min-height: 300px;
+    }
+    
+    .attraction-header {
+        height: 130px;
+    }
+    
+    .attraction-content {
+        padding: 1rem;
+    }
+    
+    .attraction-content h4 {
+        font-size: 1.1rem;
+    }
+    
+    .attraction-description {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    /* Gallery Layout - 4 columns */
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Extra Large Screens: 1200px and above */
