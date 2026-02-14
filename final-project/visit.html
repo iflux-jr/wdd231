@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD231 - Final Project | Visit Thumper's Library for storytime, events, and family fun. Find our location, hours, and upcoming activities for young readers.">
+    <meta name="author" content="Emmanuel Uko">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Thumper's Library - Visit & Events">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/visit-og.jpg">
+    <meta property="og:url" content="https://iflux-jr.github.io/wdd231/final-project/visit.html">
+    <meta property="og:description" content="Join us for storytime, author visits, and family-friendly events at Thumper's Library.">
+    
+    <title>Thumper's Library - Visit & Events</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Quicksand:wght@400;500;600&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Thumper's Library Logo" width="60" height="60">
+                    <span>Thumper's Library</span>
+                </a>
+            </div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse.html">Browse Books</a></li>
+                    <li><a href="visit.html" class="active">Visit & Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="page-header">
+            <h1>Visit Thumper's Library</h1>
+            <p>Come explore our cozy reading nooks and join us for fun events!</p>
+        </section>
+        
+        <!-- Location & Hours -->
+        <section class="location-hours">
+            <div class="info-card">
+                <h2>📍 Location</h2>
+                <p>123 Reading Lane<br>Storyville, ST 12345</p>
+                <p>Located in the heart of downtown, next to Story Park.</p>
+                <div class="map-placeholder">
+                    <!-- Simple map representation - in real project, this would be an actual map -->
+                    <div class="simple-map">
+                        <p>🗺️ Map: Corner of Reading Ln & Book St</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="info-card">
+                <h2>🕐 Hours</h2>
+                <ul class="hours-list">
+                    <li><span>Monday - Friday:</span> 9:00 AM - 7:00 PM</li>
+                    <li><span>Saturday:</span> 10:00 AM - 6:00 PM</li>
+                    <li><span>Sunday:</span> 12:00 PM - 5:00 PM</li>
+                </ul>
+                <p class="holiday-note">* Holiday hours may vary. Check our events calendar for updates.</p>
+            </div>
+            
+            <div class="info-card">
+                <h2>🎉 Amenities</h2>
+                <ul class="amenities-list">
+                    <li>👶 Cozy children's reading nook</li>
+                    <li>🍼 Nursing room available</li>
+                    <li>🪑 Family seating area</li>
+                    <li>📚 Activity corner with puzzles</li>
+                    <li>☕ Coffee bar for grown-ups</li>
+                    <li>🅿️ Free parking behind the building</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Events Section -->
+        <section id="events" class="events-section">
+            <h2>📅 Upcoming Events</h2>
+            
+            <div class="event-filters">
+                <button class="filter-btn active" data-event-filter="all">All Events</button>
+                <button class="filter-btn" data-event-filter="storytime">Storytime</button>
+                <button class="filter-btn" data-event-filter="author">Author Visits</button>
+                <button class="filter-btn" data-event-filter="workshop">Workshops</button>
+            </div>
+            
+            <div id="events-container" class="events-grid">
+                <!-- Dynamically loaded from events.json -->
+                <div class="loading">Loading events...</div>
+            </div>
+        </section>
+        
+        <!-- Contact Form -->
+        <section class="contact-section">
+            <h2>📧 Contact Us</h2>
+            <p>Have questions? Want to schedule a group visit? Send us a message!</p>
+            
+            <form id="contact-form" class="contact-form" action="form-action.html" method="GET">
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                </div>
+                
+                <div class="form-group">
+                    <label for="inquiry-type">Inquiry Type *</label>
+                    <select id="inquiry-type" name="inquiry-type" required aria-required="true">
+                        <option value="">Select one...</option>
+                        <option value="general">General Question</option>
+                        <option value="event">Event Registration</option>
+                        <option value="group">Group/School Visit</option>
+                        <option value="book">Book Inquiry</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="age-children">Ages of children (if applicable)</label>
+                    <input type="text" id="age-children" name="age-children" placeholder="e.g., 3, 5, 7">
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Subscribe to our newsletter for event updates</label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Thumper's Library</h3>
+                <p>123 Reading Lane<br>Storyville, ST 12345</p>
+                <p>📞 (555) 123-READ</p>
+                <p>✉️ hello@thumperslibrary.com</p>
+            </div>
+            <div class="footer-hours">
+                <h3>Hours</h3>
+                <p>Mon-Fri: 9am - 7pm</p>
+                <p>Saturday: 10am - 6pm</p>
+                <p>Sunday: 12pm - 5pm</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="attributions.html">Attributions</a></li>
+                    <li><a href="#" id="reset-preferences">Reset Preferences</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Thumper's Library. All rights reserved.</p>
+            <p>Watch our <a href="https://youtube.com/watch?v=your-video-id" target="_blank">Project Video</a></p>
+        </div>
+    </footer>
+    
+    <script src="js/utils.js" type="module"></script>
+    <script src="js/events.js" type="module"></script>
+    <script src="js/visit.js" type="module"></script>
+    <script>
+    // Initialize events page
+    import { initEventsPage } from './js/events.js';
+    document.addEventListener('DOMContentLoaded', () => {
+        initEventsPage();
+    });
+    </script>
+</body>
+</html>

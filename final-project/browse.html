@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD231 - Final Project | Browse our collection of children's books at Thumper's Library. Filter by age, genre, and find your next favorite story.">
+    <meta name="author" content="Emmanuel Uko">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Thumper's Library - Browse Books">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/browse-og.jpg">
+    <meta property="og:url" content="https://iflux-jr.github.io/wdd231/final-project/browse.html">
+    <meta property="og:description" content="Discover thousands of children's books at Thumper's Library.">
+    
+    <title>Thumper's Library - Browse Books</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Quicksand:wght@400;500;600&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Thumper's Library Logo" width="60" height="60">
+                    <span>Thumper's Library</span>
+                </a>
+            </div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse.html" class="active">Browse Books</a></li>
+                    <li><a href="visit.html">Visit & Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="page-header">
+            <h1>Browse Our Books</h1>
+            <p>Discover your next favorite story! Filter by age or genre to find the perfect book.</p>
+        </section>
+        
+        <!-- Filters Section -->
+        <section class="filters-section">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label for="age-filter">Age Group:</label>
+                    <select id="age-filter" aria-label="Filter by age group">
+                        <option value="all">All Ages</option>
+                        <option value="0-3">Ages 0-3 (Board Books)</option>
+                        <option value="4-6">Ages 4-6 (Picture Books)</option>
+                        <option value="7-9">Ages 7-9 (Early Readers)</option>
+                        <option value="10-12">Ages 10-12 (Chapter Books)</option>
+                        <option value="13+">Ages 13+ (Young Adult)</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="genre-filter">Genre:</label>
+                    <select id="genre-filter" aria-label="Filter by genre">
+                        <option value="all">All Genres</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="animals">Animals</option>
+                        <option value="educational">Educational</option>
+                        <option value="classic">Classics</option>
+                        <option value="picture">Picture Books</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="sort-filter">Sort by:</label>
+                    <select id="sort-filter" aria-label="Sort books">
+                        <option value="title">Title A-Z</option>
+                        <option value="title-desc">Title Z-A</option>
+                        <option value="year">Publication Year (Newest)</option>
+                        <option value="year-desc">Publication Year (Oldest)</option>
+                    </select>
+                </div>
+                
+                <button id="reset-filters" class="btn btn-secondary">Reset Filters</button>
+            </div>
+            
+        </section>
+        
+        <!-- Books Grid -->
+        <section class="books-section">
+            <div class="results-info">
+                <p><span id="book-count">0</span> books found</p>
+            </div>
+            
+            <div id="books-container" class="books-grid">
+                <!-- Dynamically loaded via JavaScript -->
+                <div class="loading">Loading books...</div>
+            </div>
+        </section>
+        
+        <!-- Book Modal (hidden by default) -->
+        <div id="book-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+            <div class="modal-overlay" tabindex="-1" data-modal-close></div>
+            <div class="modal-content" role="document">
+                <button class="modal-close" aria-label="Close modal" data-modal-close>&times;</button>
+                <div id="modal-body">
+                    <!-- Dynamic content loaded here -->
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Thumper's Library</h3>
+                <p>123 Reading Lane<br>Storyville, ST 12345</p>
+                <p>📞 (555) 123-READ</p>
+                <p>✉️ hello@thumperslibrary.com</p>
+            </div>
+            <div class="footer-hours">
+                <h3>Hours</h3>
+                <p>Mon-Fri: 9am - 7pm</p>
+                <p>Saturday: 10am - 6pm</p>
+                <p>Sunday: 12pm - 5pm</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="attributions.html">Attributions</a></li>
+                    <li><a href="#" id="reset-preferences">Reset Preferences</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Thumper's Library. All rights reserved.</p>
+            <p>Watch our <a href="https://youtube.com/watch?v=your-video-id" target="_blank">Project Video</a></p>
+        </div>
+    </footer>
+    
+    <script src="js/utils.js" type="module"></script>
+    <script src="js/books.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Weekly Storytime with Thumper",
+      "date": "2024-03-02",
+      "time": "10:00 AM",
+      "description": "Join Thumper the rabbit for stories, songs, and fun! Perfect for ages 2-5.",
+      "type": "storytime",
+      "ageGroup": "2-5",
+      "registration": false
+    },
+    {
+      "id": 2,
+      "title": "Author Visit: Jane Doe - 'The Lost Kitten'",
+      "date": "2024-03-15",
+      "time": "2:00 PM",
+      "description": "Local author Jane Doe reads her new picture book and leads a drawing activity.",
+      "type": "author",
+      "ageGroup": "4-8",
+      "registration": true
+    },
+    {
+      "id": 3,
+      "title": "Pajama Storytime",
+      "date": "2024-03-08",
+      "time": "6:30 PM",
+      "description": "Wear your pajamas and bring a stuffed animal for an evening of cozy stories.",
+      "type": "storytime",
+      "ageGroup": "3-7",
+      "registration": false
+    },
+    {
+      "id": 4,
+      "title": "Young Writers Workshop",
+      "date": "2024-03-22",
+      "time": "4:00 PM",
+      "description": "A creative writing workshop for ages 10-14. Learn to create characters and stories.",
+      "type": "workshop",
+      "ageGroup": "10-14",
+      "registration": true
+    },
+    {
+      "id": 5,
+      "title": "Baby & Me Lapsit",
+      "date": "2024-03-04",
+      "time": "9:30 AM",
+      "description": "Gentle stories, songs, and rhymes for babies 0-24 months and their caregivers.",
+      "type": "storytime",
+      "ageGroup": "0-2",
+      "registration": false
+    },
+    {
+      "id": 6,
+      "title": "Illustrator Showcase: Tom Smith",
+      "date": "2024-03-29",
+      "time": "3:00 PM",
+      "description": "Learn how picture books are illustrated! Drawing demo and Q&A.",
+      "type": "workshop",
+      "ageGroup": "6-12",
+      "registration": true
+    }
+  ]
+}

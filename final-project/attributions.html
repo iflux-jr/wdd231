@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD231 - Final Project | Attributions and sources for Thumper's Library website project">
+    <meta name="author" content="Emmanuel Uko">
+    <title>Thumper's Library - Attributions</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Quicksand:wght@400;500;600&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Thumper's Library Logo" width="60" height="60">
+                    <span>Thumper's Library</span>
+                </a>
+            </div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse.html">Browse Books</a></li>
+                    <li><a href="visit.html">Visit & Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="attributions">
+            <h1>Attributions</h1>
+            <p>This website uses various resources and data sources. Here are the attributions:</p>
+            
+            <h2>Data Sources</h2>
+            <ul>
+                <li><strong>Book Data:</strong> <a href="https://openlibrary.org/developers/api" target="_blank">Open Library API</a> - Used for book information including titles, authors, publication years, and subjects.</li>
+                <li><strong>Event Data:</strong> Local JSON file created for demonstration purposes.</li>
+            </ul>
+            
+            <h2>Fonts</h2>
+            <ul>
+                <li><strong>Fredoka:</strong> <a href="https://fonts.google.com/specimen/Fredoka" target="_blank">Google Fonts</a> - Used for headings</li>
+                <li><strong>Quicksand:</strong> <a href="https://fonts.google.com/specimen/Quicksand" target="_blank">Google Fonts</a> - Used for subheadings</li>
+                <li><strong>Open Sans:</strong> <a href="https://fonts.google.com/specimen/Open+Sans" target="_blank">Google Fonts</a> - Used for body text</li>
+            </ul>
+            
+            <h2>Icons & Images</h2>
+            <ul>
+                <li><strong>Favicon:</strong> Generated using <a href="https://favicon.io/" target="_blank">favicon.io</a></li>
+                <li><strong>Emoji Icons:</strong> Standard Unicode emoji used throughout the site</li>
+                <li><strong>Logo:</strong> Custom design created for this project</li>
+            </ul>
+            
+            <h2>Course Resources</h2>
+            <ul>
+                <li>Project requirements and guidelines from WDD231 course</li>
+                <li>JavaScript patterns and best practices from course materials</li>
+            </ul>
+            
+            <p><a href="index.html">← Back to Home</a></p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Thumper's Library</h3>
+                <p>123 Reading Lane<br>Storyville, ST 12345</p>
+                <p>📞 (555) 123-READ</p>
+                <p>✉️ hello@thumperslibrary.com</p>
+            </div>
+            <div class="footer-hours">
+                <h3>Hours</h3>
+                <p>Mon-Fri: 9am - 7pm</p>
+                <p>Saturday: 10am - 6pm</p>
+                <p>Sunday: 12pm - 5pm</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="attributions.html">Attributions</a></li>
+                    <li><a href="#" id="reset-preferences">Reset Preferences</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Thumper's Library. All rights reserved.</p>
+            <p>Watch our <a href="https://youtube.com/watch?v=your-video-id" target="_blank">Project Video</a></p>
+        </div>
+    </footer>
+    
+    <script src="js/utils.js" type="module"></script>
+</body>
+</html>
